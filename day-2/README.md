@@ -1,8 +1,8 @@
 # IAM
 
-AWS IAM (Identity and Access Management) is a service provided by Amazon Web Services (AWS) that helps you manage access to your AWS resources. It's like a security system for your AWS account.
+AWS IAM (Identity and Access Management) is a service provided by Amazon Web Services (AWS) that helps you manage and access your AWS resources. It's like a security system for your AWS account.
 
-IAM allows you to create and manage users, groups, and roles. Users represent individual people or entities who need access to your AWS resources. Groups are collections of users with similar access requirements, making it easier to manage permissions. Roles are used to grant temporary access to external entities or services.
+IAM allows you to create and manage users, groups, and roles. Users represent individual people or entities who needs to access to your AWS resources. Groups are collections of users with similar access requirements, making it easier to manage permissions. Roles are used to grant temporary access to external entities or services.
 
 With IAM, you can control and define permissions through policies. Policies are written in JSON format and specify what actions are allowed or denied on specific AWS resources. These policies can be attached to IAM entities (users, groups, or roles) to grant or restrict access to AWS services and resources.
 
