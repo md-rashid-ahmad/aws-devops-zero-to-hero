@@ -4,7 +4,7 @@ Imagine you want to set up a private, secure, and isolated area in the cloud whe
 
 A VPC is a virtual network that you create in the cloud. It allows you to have your own private section of the internet, just like having your own network within a larger network. Within this VPC, you can create and manage various resources, such as servers, databases, and storage.
 
-Amazon Virtual Private Cloud (VPC) is a foundational AWS service that enables you to create a logically isolated section within the AWS cloud It’s like setting up your own mini internet inside AWS cloud. You have full control over your virtual networking environment, including selecting your own IP address range, creating subnets, and configuring route tables and network gateways.
+VPC is a service provided by AWS that enables you to create a logically isolated section within the AWS cloud It’s like setting up your own mini internet inside AWS cloud. You have full control over your virtual networking environment, including selecting your own IP address range, creating subnets, and configuring route tables and network gateways.
 
 To connect your VPC to the internet or other networks, you can set up gateways or routers. These act as entry and exit points for traffic going in and out of your VPC. You can control the flow of traffic and set up security measures to protect your resources from unauthorized access.
 
