@@ -4,12 +4,9 @@ Imagine you want to set up a private, secure, and isolated area in the cloud whe
 
 A VPC is a virtual network that you create in the cloud. It allows you to have your own private section of the internet, just like having your own network within a larger network. Within this VPC, you can create and manage various resources, such as servers, databases, and storage.
 
-It’s like setting up your own mini internet inside AWS cloud. You have full control over your virtual networking environment, including selecting your own IP address range, creating subnets, configuring route tables and network gateways.
+It’s like setting up your own mini internet inside AWS cloud. You have full control over your virtual networking environment, including selecting your own IP address range, creating subnets, configuring route tables and network gateways. You can define access rules, set up firewalls, and configure security groups to regulate who can access your resources and how they can communicate.
 
 To connect your VPC to the internet or other networks, you can set up gateways or routers. These act as entry and exit points for traffic going in and out of your VPC. You can control the flow of traffic and set up security measures to protect your resources from unauthorized access.
-
-With a VPC, you have control over your network environment. You can define access rules, set up firewalls, and configure security groups to regulate who can access your resources and how they can communicate.
-
 
 By default, when you create an AWS account, AWS will create a default VPC for you but this default VPC is just to get started with AWS. You should create VPCs for applications or projects. 
 
@@ -29,15 +26,15 @@ IP addressing
 
 Network Access Control List (NACL)
 
-    A Network Access Control List is a stateless firewall that controls inbound and outbound traffic at the subnet level. It operates at the IP address level and can allow or deny traffic based on rules that you define. NACLs provide an additional layer of network security for your VPC.
+A Network Access Control List is a stateless firewall that controls inbound and outbound traffic at the subnet level. It operates at the IP address level and can allow or deny traffic based on rules that you define. NACLs provide an additional layer of network security for your VPC.
    
 Security Group
 
-    A security group acts as a virtual firewall for instances (EC2 instances or other resources) within a VPC. It controls inbound and outbound traffic at the instance level. Security groups allow you to define rules that permit or restrict traffic based on protocols, ports, and IP addresses.  
+A security group acts as a virtual firewall for instances (EC2 instances or other resources) within a VPC. It controls inbound and outbound traffic at the instance level. Security groups allow you to define rules that permit or restrict traffic based on protocols, ports, and IP addresses.  
 
 Routing
 
-    Use route tables to determine where network traffic from your subnet or gateway is directed.
+Use route tables to determine where network traffic from your subnet or gateway is directed.
 Gateways and endpoints
 
     A gateway connects your VPC to another network. For example, use an internet gateway to connect your VPC to the internet. Use a VPC endpoint to connect to AWS services privately, without the use of an internet gateway or NAT device.
