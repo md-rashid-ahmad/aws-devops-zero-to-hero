@@ -21,7 +21,7 @@ A VPC is a virtual network that closely resembles a traditional network that you
 
 Subnets
 ---------------
-A subnet is a range of IP addresses in your VPC. A subnet must reside in a single Availability Zone. After you add subnets, you can deploy AWS resources in your VPC. Imagine your VPC as a big piece of land. Subnets are like dividing this land into smaller plots. These plots can be either public (accessible from the internet) or private (isolated from the internet).
+A subnet is a range of IP addresses in your VPC. After you add subnets, you can deploy AWS resources in your VPC. Imagine your VPC as a big piece of land. Subnets are like dividing this land into smaller plots. These plots can be either public (accessible from the internet) or private (isolated from the internet).
 
 IP addressing
 ---------------
