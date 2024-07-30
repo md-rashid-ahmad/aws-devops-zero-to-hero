@@ -33,7 +33,7 @@ NACL Provides an additional layer of security at the subnet level. Network ACLs 
    
 Security Group
 ------------------
-Act as virtual firewalls for your instances to control inbound and outbound traffic at the instance level. Security Groups are stateful, meaning if you allow inbound traffic from an IP address, the response traffic to that IP address is automatically allowed. 
+Security Group act as a virtual firewalls for your instances to control inbound and outbound traffic at the instance level. Security Groups are stateful, meaning if you allow inbound traffic from an IP address, the response traffic to that IP address is automatically allowed. 
 
 Rout Table
 --------------
