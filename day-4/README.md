@@ -29,23 +29,31 @@ You can assign IP addresses, both IPv4 and IPv6, to your VPCs and subnets. You c
 
 Network Access Control List (NACL)
 -------------------------------------
-A Network Access Control List is a stateless firewall that controls inbound and outbound traffic at the subnet level. It operates at the IP address level and can allow or deny traffic based on rules that you define. NACLs provide an additional layer of network security for your VPC.
+NACL Provides an additional layer of security at the subnet level. Network ACLs are stateless, meaning both inbound and outbound rules must be configured. It operates at the IP address level and can allow or deny traffic based on rules that you define.
    
 Security Group
 ------------------
-A security group acts as a virtual firewall for instances (EC2 instances or other resources) within a VPC. It controls inbound and outbound traffic at the instance level. Security groups allow you to define rules that permit or restrict traffic based on protocols, ports, and IP addresses.  
+Act as virtual firewalls for your instances to control inbound and outbound traffic at the instance level. Security Groups are stateful, meaning if you allow inbound traffic from an IP address, the response traffic to that IP address is automatically allowed. 
 
-Routing
+Rout Table
 --------------
-Use route tables to determine where network traffic from your subnet or gateway is directed.
+These are like maps that dictate where traffic goes within your VPC. Each subnet is associated with a route table that directs the traffic.
 
-Gateways and endpoints
+Internet Gateways
 ------------------------
-A gateway connects your VPC to another network. For example, use an internet gateway to connect your VPC to the internet. Use a VPC endpoint to connect to AWS services privately, without the use of an internet gateway or NAT device.
+This acts as a bridge between your VPC and the internet, allowing your resources in public subnets to communicate with the outside world.
 
-Peering connections
+VPC Peering
 --------------------------
-Use a VPC peering connection to route traffic between the resources in two VPCs.
+A networking connection between two VPCs that enables routing traffic between them privately. This is useful for creating multi-region architectures or connecting different AWS accounts.
+
+VPC Endpoints
+---------------
+VPC Endpoints: Allow you to privately connect your VPC to supported AWS services without requiring an Internet Gateway, NAT device, VPN connection, or AWS Direct Connect connection. There are two types:
+
+Interface Endpoints: Use AWS Private Link and provide private connectivity to services like Amazon S3, DynamoDB, and other AWS services.
+
+Gateway Endpoints: Only for Amazon S3 and DynamoDB, routing traffic through a specified gateway.
 
 Traffic Mirroring
 --------------------------
@@ -57,7 +65,11 @@ Use a transit gateway, which acts as a central hub, to route traffic between you
 
 VPC Flow Logs
 --------------------
-A flow log captures information about the IP traffic going to and from network interfaces in your VPC.
+Flow Logs: Capture information about the IP traffic going to and from network interfaces in your VPC. This data is used for monitoring, troubleshooting, and security analysis.
+
+NAT Gateway/Bastion Host
+-----------------------------
+NAT Gateway/Bastion Host: While public subnets can directly access the internet via the Internet Gateway, private subnets need a NAT Gateway or a Bastion Host to securely interact with the internet without exposing instances directly.
 
 VPN connections
 ------------------------
