@@ -45,7 +45,7 @@ This acts as a bridge between your VPC and the internet, allowing your resources
 
 VPC Peering
 --------------------------
-A networking connection between two VPCs that enables routing traffic between them privately. This is useful for creating multi-region architectures or connecting different AWS accounts.
+VPC Peering is a networking connection between two VPCs that enables routing traffic between them privately. This is useful for creating multi-region architectures or connecting different AWS accounts.
 
 VPC Endpoints
 ---------------
