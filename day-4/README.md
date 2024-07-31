@@ -49,7 +49,11 @@ VPC Peering is a networking connection between two VPCs that enables routing tra
 
 VPC Endpoints
 ---------------
-VPC Endpoints: Allow you to privately connect your VPC to supported AWS services without requiring an Internet Gateway, NAT device, VPN connection, or AWS Direct Connect connection. There are two types:
+VPC Endpoints: Allow you to privately connect your VPC to supported AWS services without requiring an Internet Gateway, NAT device, VPN connection, or AWS Direct Connect connection. 
+Amazon VPC instances do not require public IP addresses to communicate with resources of the service. 
+VPC endpoints are virtual devices. They are horizontally scaled, and highly available components that allow communication between instances in an Amazon VPC and services without imposing availability risks.
+
+There are two types:
 
 Interface Endpoints: Use AWS Private Link and provide private connectivity to services like Amazon S3, DynamoDB, and other AWS services.
 
